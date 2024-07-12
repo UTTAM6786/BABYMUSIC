@@ -2,7 +2,7 @@ import asyncio, os, time, aiohttp
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 from asyncio import sleep
-from PURVIMUSIC import app
+from BABYMUSIC import app
 from pyrogram import filters, Client, enums
 from pyrogram.enums import ParseMode
 from pyrogram.types import *
@@ -66,24 +66,24 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "PURVIMUSIC/assets/userinfo.png"
-font_path = "PURVIMUSIC/assets/hiroko.ttf"
+bg_path = "BABYMUSIC/assets/userinfo.png"
+font_path = "BABYMUSIC/assets/hiroko.ttf"
 
 # --------------------------------------------------------------------------------- #
 
 
 INFO_TEXT = """**
 ❅─────✧❅✦❅✧─────❅
-            ✦ ᴜsᴇʀ ɪɴғᴏ ✦
+            ✦ υʂҽɾ ιɳϝσ ✦
 
-➻ ᴜsᴇʀ ɪᴅ ‣ **`{}`
-**➻ ғɪʀsᴛ ɴᴀᴍᴇ ‣ **{}
-**➻ ʟᴀsᴛ ɴᴀᴍᴇ ‣ **{}
-**➻ ᴜsᴇʀɴᴀᴍᴇ ‣ **`{}`
-**➻ ᴍᴇɴᴛɪᴏɴ ‣ **{}
-**➻ ʟᴀsᴛ sᴇᴇɴ ‣ **{}
-**➻ ᴅᴄ ɪᴅ ‣ **{}
-**➻ ʙɪᴏ ‣ **`{}`
+➻ υʂҽɾ ιԃ ‣ **`{}`
+**➻ ϝιɾʂƚ ɳαɱҽ ‣ **{}
+**➻ ʅαʂƚ ɳαɱҽ ‣ **{}
+**➻ υʂҽɾɳαɱҽ ‣ **`{}`
+**➻ ɱҽɳƚισɳ ‣ **{}
+**➻ ʅαʂƚ ʂҽҽɳ ‣ **{}
+**➻ ԃƈ ιԃ ‣ **{}
+**➻ Ⴆισ ‣ **`{}`
 
 **❅─────✧❅✦❅✧─────❅**
 """
