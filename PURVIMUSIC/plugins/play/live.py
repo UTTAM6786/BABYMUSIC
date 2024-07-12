@@ -1,9 +1,9 @@
 from pyrogram import filters
 import random
-from PURVIMUSIC import YouTube, app
-from PURVIMUSIC.utils.channelplay import get_channeplayCB
-from PURVIMUSIC.utils.decorators.language import languageCB
-from PURVIMUSIC.utils.stream.stream import stream
+from BABYMUSIC import YouTube, app
+from BABYMUSIC.utils.channelplay import get_channeplayCB
+from BABYMUSIC.utils.decorators.language import languageCB
+from BABYMUSIC import stream
 from config import BANNED_USERS
 
 
@@ -56,5 +56,5 @@ async def play_live_stream(client, CallbackQuery, _):
             err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
             return await mystic.edit_text(err)
     else:
-        return await mystic.edit_text("» ɴᴏᴛ ᴀ ʟɪᴠᴇ sᴛʀᴇᴀᴍ.")
+        return await mystic.edit_text("» ɳσƚ α ʅιʋҽ ʂƚɾҽαɱ.")
     await mystic.delete()
