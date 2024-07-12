@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from BABYMUSIC import YouTube, app
-from BABYMUSIC.core.call import PURVI
+from BABYMUSIC.core.call import BABY
 from BABYMUSIC.misc import db
 from BABYMUSIC.utils import AdminRightsCheck, seconds_to_min
 from BABYMUSIC.utils.inline import close_markup
