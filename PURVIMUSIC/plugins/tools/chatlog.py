@@ -2,7 +2,7 @@ import random
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from config import LOGGER_ID as LOG_GROUP_ID
-from PURVIMUSIC import app 
+from BABYMUSIC import app 
 from pyrogram.errors import RPCError
 from typing import Union, Optional
 from PIL import Image, ImageDraw, ImageFont
@@ -26,14 +26,14 @@ async def join_watcher(_, message):
         if member.id == app.id:
             count = await app.get_chat_members_count(chat.id)
             msg = (
-                f"📝 ᴍᴜsɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ\n\n"
+                f"📝 ɱυʂιƈ Ⴆσƚ αԃԃҽԃ ιʂ ɳҽɯ ɠɾσυρ\n\n"
                 f"____________________________________\n\n"
-                f"📌 ᴄʜᴀᴛ ɴᴀᴍᴇ: {chat.title}\n"
-                f"🍂 ᴄʜᴀᴛ ɪᴅ: {chat.id}\n"
-                f"🔐 ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ: @{chat.username}\n"
-                f"🛰 ᴄʜᴀᴛ ʟɪɴᴋ: [ᴄʟɪᴄᴋ]({link})\n"
-                f"📈 ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs: {count}\n"
-                f"🤔 ᴀᴅᴅᴇᴅ ʙʏ: {message.from_user.mention}"
+                f"📌 ƈԋαƚ ɳαɱҽ: {chat.title}\n"
+                f"🍂 ƈԋαƚ ιԃ: {chat.id}\n"
+                f"🔐 ƈԋαƚ υʂҽɾɳαɱҽ: @{chat.username}\n"
+                f"🛰 ƈԋαƚ ʅιɳƙ: [ᴄʟɪᴄᴋ]({link})\n"
+                f"📈 ɠɾσυρ ɱҽɱႦҽɾ: {count}\n"
+                f"🤔 αԃԃҽԃ Ⴆყ: {message.from_user.mention}"
             )
             await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton(f"sᴇᴇ ɢʀᴏᴜᴘ👀", url=f"{link}")]
