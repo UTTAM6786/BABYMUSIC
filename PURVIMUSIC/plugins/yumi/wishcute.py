@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import random
 import requests
-from PURVIMUSIC import app 
+from BABYMUSIC import app 
 
 SUPPORT_CHAT = "UBoT_HeLP"
 
