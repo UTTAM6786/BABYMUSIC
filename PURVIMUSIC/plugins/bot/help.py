@@ -1,15 +1,15 @@
 from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message, InlineKeyboardButton
-from PURVIMUSIC import app
-from PURVIMUSIC.utils import help_pannel
-from PURVIMUSIC.utils.database import get_lang
-from PURVIMUSIC.utils.decorators.language import LanguageStart, languageCB
-from PURVIMUSIC.utils.inline.help import help_back_markup, private_help_panel
+from BABYMUSIC import app
+from BABYMUSIC.utils import help_pannel
+from BABYMUSIC.utils.database import get_lang
+from BABYMUSIC.utils.decorators.language import LanguageStart, languageCB
+from BABYMUSIC.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
-from PURVIMUSIC.utils.stuffs.buttons import BUTTONS
-from PURVIMUSIC.utils.stuffs.helper import Helper
+from BABYMUSIC.utils.stuffs.buttons import BUTTONS
+from BABYMUSIC.utils.stuffs.helper import Helper
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
