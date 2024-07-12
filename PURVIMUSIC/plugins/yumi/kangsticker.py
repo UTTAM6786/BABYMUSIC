@@ -14,9 +14,9 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from PURVIMUSIC import app
+from BABYMUSIC import app
 from config import BOT_USERNAME
-from PURVIMUSIC.utils.errors import capture_err
+from BABYMUSIC.utils.errors import capture_err
 
 from PURVIMUSIC.utils.files import (
     get_document_from_file_id,
