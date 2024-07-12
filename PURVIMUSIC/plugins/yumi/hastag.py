@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup as  BSP
-from PURVIMUSIC import app as PURVI
+from BABYMUSIC import app as PURVI
 from pyrogram import filters
 url = "https://all-hashtag.com/library/contents/ajax_generator.php"
 
