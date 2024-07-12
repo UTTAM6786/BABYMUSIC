@@ -1,8 +1,8 @@
-from PURVIMUSIC.core.bot import PURVI
-from PURVIMUSIC.core.dir import dirr
-from PURVIMUSIC.core.git import git
-from PURVIMUSIC.core.userbot import Userbot
-from PURVIMUSIC.misc import dbb, heroku
+from BABYMUSIC.core.bot import BABY
+from BABYMUSIC.core.dir import dirr
+from BABYMUSIC.core.git import git
+from BABYMUSIC.core.userbot import Userbot
+from BABYMUSIC.misc import dbb, heroku
 
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = PURVI()
+app = BABY()
 api = SafoneAPI()
 userbot = Userbot()
 
