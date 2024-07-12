@@ -5,15 +5,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from PURVIMUSIC import Carbon, YouTube, app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import db
-from PURVIMUSIC.utils.database import add_active_video_chat, is_active_chat
-from PURVIMUSIC.utils.exceptions import AssistantErr
-from PURVIMUSIC.utils.inline import aq_markup, close_markup, stream_markup
-from PURVIMUSIC.utils.pastebin import PURVIBin
-from PURVIMUSIC.utils.stream.queue import put_queue, put_queue_index
-from PURVIMUSIC.utils.thumbnails import get_thumb
+from BABYMUSIC import Carbon, YouTube, app
+from BABYMUSIC.core.call import PURVI
+from BABYMUSIC.misc import db
+from BABYMUSIC.utils.database import add_active_video_chat, is_active_chat
+from BABYMUSIC.utils.exceptions import AssistantErr
+from BABYMUSIC.utils.inline import aq_markup, close_markup, stream_markup
+from BABYMUSIC.utils.pastebin import BABYBin
+from BABYMUSIC.utils.stream.queue import put_queue, put_queue_index
+from BABYMUSIC.utils.thumbnails import get_thumb
 
 
 async def stream(
@@ -79,7 +79,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_14"])
-                await PURVI.join_call(
+                await BABY.join_call(
                     chat_id,
                     original_chat_id,
                     file_path,
@@ -116,7 +116,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await PURVIBin(msg)
+            link = await BABYBin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -225,7 +225,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await PURVI.join_call(chat_id, original_chat_id, file_path, video=None)
+            await BABY.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -277,7 +277,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await PURVI.join_call(chat_id, original_chat_id, file_path, video=status)
+            await BABY.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -333,7 +333,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await PURVI.join_call(
+            await BABY.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -391,7 +391,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await PURVI.join_call(
+            await BABY.join_call(
                 chat_id,
                 original_chat_id,
                 link,
