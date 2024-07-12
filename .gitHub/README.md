@@ -6,13 +6,13 @@
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=TEAMPURVI&repo=PURVI_MUSIC&theme=flag-india)
 
-[![GIF](https://github.com/TEAMPURVI/PURVI_MUSIC/blob/main/TEAMPURVI.gif)](https://github.com/TEAMPURVI)
-   [![ALPHA](https://github-stats-alpha.vercel.app/api?username=TEAMPURVI "RAUSHAN")](https://github-stats-alpha.vercel.app/api?username=TEAMPURVI "RAUSHAN")
+[![GIF](https://github.com/UTTAM6786/BABYMUSIC/blob/main/BABYMUSIC.gif)]([https://github.com/UTTAM6786]())
+   [![ALPHA](https://github-stats-UTTAM.vercel.app/api?username=UTTAM6786 "UTTAM")](UTTAM.vercel.app/api?username=UTTAM6786 "UTTAM")
 
 
 
 
-GO TO [RELOAD.PY](https://github.com/TEAMPURVI/PURVI_MUSIC/blob/main/PURVIMUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
+GO TO [RELOAD.PY](https://github.com/UTTAM6786/BABYMUSIC/blob/main/UTTAM6786/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
 <p align="center">
   <img src="https://telegra.ph/file/207afbc175113d14d1231.jpg">
@@ -26,10 +26,10 @@ d
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TEAMPURVI/PURVI_MUSIC"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/UTTAM6786/BABYMUSIC"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
-<p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=TEAMPURVI&show_icons=true&locale=en&layout=compact" alt="TEAMPURVI" /></p>
+<p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=TEAMPUhttps://github-readme-stats.vercel.app/api/top-langs?username=TEAMPURVI&show_icons=true&locale=en&layout=compactRVI&show_icons=true&locale=en&layout=compact" alt="TEAMPURVI" /></p>
 
 [![Contributors](https://contrib.rocks/image?repo=TEAMPURVI/PURVI_MUSIC)](https://github.com/TEAMPURVI/PURVIMUSIC/graphs/contributors)
 
