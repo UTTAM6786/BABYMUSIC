@@ -1,4 +1,4 @@
-from PURVIMUSIC.utils.mongo import db
+from BABYMUSIC.utils.mongo import db
 
 coupledb = db.couple
 
