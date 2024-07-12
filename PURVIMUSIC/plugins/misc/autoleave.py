@@ -4,9 +4,9 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI, autoend
-from PURVIMUSIC.utils.database import get_client, is_active_chat, is_autoend
+from BABYMUSIC import app
+from BABYMUSIC.core.call import PURVI, autoend
+from BABYMUSIC.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
