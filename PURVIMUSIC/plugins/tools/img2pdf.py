@@ -7,10 +7,10 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.utils.errors import capture_err
+from BABYMUSIC import app
+from BABYMUSIC.utils.errors import capture_err
 
-from PURVIMUSIC.core.sections import section
+from BABYMUSIC.core.sections import section
 
 
 async def convert(
