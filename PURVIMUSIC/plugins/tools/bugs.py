@@ -2,7 +2,7 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 from config import OWNER_ID as owner_id
-from PURVIMUSIC import app
+from BABYMUSIC import app
 
 
 
@@ -49,13 +49,13 @@ async def bugs(_, msg: Message):
 **ᴇᴠᴇɴᴛ sᴛᴀᴍᴩ : ** **{datetimes}**"""
 
     if msg.chat.type == "private":
-        await msg.reply_text("<b>» ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴩs.</b>")
+        await msg.reply_text("<b>» ƚԋιʂ ƈσɱɱαɳԃ σɳʅყ ɯσɾƙҽԃ ιɳ ɠɾσυρ.</b>")
         return
 
     if user_id == owner_id:
         if bugs:
             await msg.reply_text(
-                "<b>» ᴀʀᴇ ʏᴏᴜ ᴄᴏᴍᴇᴅʏ ᴍᴇ 🤣, ʏᴏᴜ'ʀᴇ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏғ ᴛʜᴇ ʙᴏᴛ.</b>",
+                "<b>» αɾҽ ყσυ ƈσɱҽԃყ ɱҽ 🤣, ყσυ'ɾҽ ƚԋҽ σɯɳҽɾ σϝ ƚԋҽ Ⴆσƚ.</b>",
             )
             return
         else:
