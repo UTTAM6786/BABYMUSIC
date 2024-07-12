@@ -1,4 +1,4 @@
-from PURVIMUSIC import app
+from BABYMUSIC import app
 from config import OWNER_ID
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
