@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.utils.database import set_loop
-from PURVIMUSIC.utils.decorators import AdminRightsCheck
-from PURVIMUSIC.utils.inline import close_markup
+from BABYMUSIC import app
+from BABYMUSIC.core.call import PURVI
+from BABYMUSIC.utils.database import set_loop
+from BABYMUSIC.utils.decorators import AdminRightsCheck
+from BABYMUSIC.utils.inline import close_markup
 from config import BANNED_USERS
 
 
