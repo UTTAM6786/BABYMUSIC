@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils import get_readable_time
-from PURVIMUSIC.utils.database import (
+from BABYMUSIC import app
+from BABYMUSIC.misc import SUDOERS
+from BABYMUSIC.utils import get_readable_time
+from BABYMUSIC.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -15,8 +15,8 @@ from PURVIMUSIC.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from PURVIMUSIC.utils.decorators.language import language
-from PURVIMUSIC.utils.extraction import extract_user
+from BABYMUSIC.utils.decorators.language import language
+from BABYMUSIC.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
