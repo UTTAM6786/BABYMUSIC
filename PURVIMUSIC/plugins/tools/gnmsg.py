@@ -1,7 +1,7 @@
 import re
 from pyrogram import filters
 import random
-from PURVIMUSIC import app
+from BABYMUSIC import app
 
 
 @app.on_message(filters.command(["gn","n","oodnight","ood Night","ood night"], prefixes=["/","g","G"]))
@@ -15,7 +15,7 @@ def goodnight_command_handler(_, message):
     else:
         emoji = get_random_emoji()
         app.send_message(message.chat.id, emoji)
-        message.reply_text(f"**Goodnight, {sender}! Sleep tight. {emoji}**")
+        message.reply_text(f"**Goodnight, {sender}! ɠσσԃ ɳιɠԋƚ ႦαႦყ. {emoji}**")
 
 
 def get_random_sticker():
