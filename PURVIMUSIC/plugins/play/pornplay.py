@@ -1,13 +1,13 @@
 from pyrogram import filters
 import requests, random
 from bs4 import BeautifulSoup
-from PURVIMUSIC import app
+from BABYMUSIC import app
 import pytgcalls
 import os, yt_dlp 
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pytgcalls.types import AudioVideoPiped
-from PURVIMUSIC.plugins.play import play
-from PURVIMUSIC.plugins.play.pornplay import play
+from BABYMUSIC.plugins.play import play
+from BABYMUSIC.plugins.play.pornplay import play
 
 #
 #####
@@ -16,8 +16,8 @@ vdo_link = {}
 
 keyboard = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("⊝ ᴄʟᴏsᴇ ⊝", callback_data="close_data"), 
-            InlineKeyboardButton("⊝ ᴠᴘʟᴀʏ⊝", callback_data="play"),
+            InlineKeyboardButton("⊝ ƈʅσʂҽ ⊝", callback_data="close_data"), 
+            InlineKeyboardButton("⊝ ʋρʅαყ ⊝", callback_data="play"),
         ]
 ])
 
@@ -98,8 +98,8 @@ async def get_random_video_info(client, message):
         vdo_link[message.chat.id] = {'link': video_link}
         keyboard1 = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("⊝ ᴄʟᴏsᴇ ⊝", callback_data="close_data"), 
-                InlineKeyboardButton("⊝ ᴠᴘʟᴀʏ⊝", callback_data=f"vplay"),
+                InlineKeyboardButton("⊝ ƈʅσʂҽ ⊝", callback_data="close_data"), 
+                InlineKeyboardButton("⊝ ʋρʅαყ ⊝", callback_data=f"vplay"),
             ]
     ])
         await message.reply_video(video, caption=f"{title}", reply_markup=keyboard1)
@@ -133,5 +133,5 @@ async def get_random_video_info(client, message):
             reply_markup=keyboard
         )
     else:
-        await message.reply(f"No video link found for '{title}'.")
+        await message.reply(f"ɳσ ʋιԃҽσ ʅιɳƙ ϝσυɳԃ ϝσɾ '{title}'.")
             
