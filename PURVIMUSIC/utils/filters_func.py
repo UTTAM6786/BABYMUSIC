@@ -1,8 +1,8 @@
 from enum import Enum, auto
-from PURVIMUSIC import app
+from BABYMUSIC import app
 from pyrogram.types import InlineKeyboardMarkup, Message
-from PURVIMUSIC.utils.msg_types import button_markdown_parser
-from PURVIMUSIC.utils.notes_func import NoteFillings
+from BABYMUSIC.utils.msg_types import button_markdown_parser
+from BABYMUSIC.utils.notes_func import NoteFillings
 from emojis import decode
 from pyrogram.types import Message
 
