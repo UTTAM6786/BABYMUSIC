@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI
+from BABYMUSIC import app
+from BABYMUSIC.core.call import PURVI
 
 welcome = 20
 close = 30
