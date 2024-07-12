@@ -4,17 +4,17 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils.database import (
+from BABYMUSIC import app
+from BABYMUSIC.misc import SUDOERS
+from BABYMUSIC.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from PURVIMUSIC.utils.decorators.language import language
-from PURVIMUSIC.utils.formatters import alpha_to_int
+from BABYMUSIC.utils.decorators.language import language
+from BABYMUSIC.utils.formatters import uttam_to_int
 from config import adminlist
 
 IS_BROADCASTING = False
