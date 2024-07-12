@@ -10,9 +10,9 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import HAPP, SUDOERS, XCB
-from PURVIMUSIC.utils.database import (
+from BABYMUSIC import app
+from BABYMUSIC.misc import HAPP, SUDOERS, XCB
+from BABYMUSIC.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
