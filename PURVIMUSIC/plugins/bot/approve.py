@@ -52,8 +52,8 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "PURVIMUSIC/assets/userinfo.png"
-font_path = "PURVIMUSIC/assets/hiroko.ttf"
+bg_path = "BABYMUSIC/assets/userinfo.png"
+font_path = "BABYMUSIC/assets/hiroko.ttf"
 
 # --------------------------------------------------------------------------------- #
 
@@ -91,7 +91,7 @@ async def autoapprove(client: app, message: ChatJoinRequest):
         profile_path=photo,
     )
 
-    print(f"{user.first_name} Joined 🤝")  # Logs
+    print(f"{user.first_name} ʝσιɳҽԃ 🤝")  # Logs
 
     await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
 
@@ -104,7 +104,7 @@ async def autoapprove(client: app, message: ChatJoinRequest):
                 [
                     [
                         InlineKeyboardButton(
-                            " ๏ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ๏ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                            " ๏ αԃԃ ɱҽ ႦαႦყ ๏ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                     ]
                 ]
             ),
