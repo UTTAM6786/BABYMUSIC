@@ -18,13 +18,13 @@ from BABYMUSIC import app
 from config import BOT_USERNAME
 from BABYMUSIC.utils.errors import capture_err
 
-from PURVIMUSIC.utils.files import (
+from BABYMUSIC.utils.files import (
     get_document_from_file_id,
     resize_file_to_sticker_size,
     upload_document,
 )
 
-from PURVIMUSIC.utils.stickerset import (
+from BABYMUSIC.utils.stickerset import (
     add_sticker_to_set,
     create_sticker,
     create_sticker_set,
