@@ -1,10 +1,10 @@
 from PURVIMUSIC import app
 from config import BOT_USERNAME
 from pyrogram import filters
-from PURVIMUSIC.utils.purvi_ban import admin_filter
-from PURVIMUSIC.mongo.notesdb import *
-from PURVIMUSIC.utils.notes_func import GetNoteMessage, exceNoteMessageSender, privateNote_and_admin_checker
-from PURVIMUSIC.utils.yumidb import user_admin
+from BABYMUSIC.utils.purvi_ban import admin_filter
+from BABYMUSIC.mongo.notesdb import *
+from BABYMUSIC.utils.notes_func import GetNoteMessage, exceNoteMessageSender, privateNote_and_admin_checker
+from BABYMUSIC.utils.yumidb import user_admin
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup , Message , CallbackQuery
 from pyrogram.enums import ChatMemberStatus
 
@@ -18,7 +18,7 @@ async def _save(client, message):
         return await message.reply_text("you need to give the note a name!")
     
     if not message.reply_to_message and not len(message.command) >= 3:
-        return await message.reply_text("You need to give the note some content!")
+        return await message.reply_text("ყσυ ɳҽҽԃ ƚσ ɠιʋҽ ƚԋҽ ɳσƚҽ ʂσɱҽ ƈσɳƚҽɳƚ!")
     
     NoteName = message.command[1]
     Content, Text, DataType = GetNoteMessage(message)
@@ -33,10 +33,10 @@ async def _save(client, message):
 async def _getnote(client, message):
     chat_id = message.chat.id
     if not len(message.command) >= 2:
-        return await message.reply_text("You need to give the note a name!")  
+        return await message.reply_text("ყσυ ɳҽҽԃ ƚσ ɠιʋҽ ƚԋҽ ɳσƚҽ α ɳαɱҽ!")  
     note_name = message.command[1]
     if not await isNoteExist(chat_id, note_name):
-         return await message.reply_text("Note not found")
+         return await message.reply_text("ɳσƚҽ ɳσƚ ϝαυɳԃ")
     await send_note(message, note_name)
     
 
