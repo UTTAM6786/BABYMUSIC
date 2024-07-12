@@ -4,11 +4,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 from config import *
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.utils import bot_sys_stats
-from PURVIMUSIC.utils.decorators.language import language
-from PURVIMUSIC.utils.inline import supp_markup
+from BABYMUSIC import app
+from BABYMUSIC.core.call import PURVI
+from BABYMUSIC.utils import bot_sys_stats
+from BABYMUSIC.utils.decorators.language import language
+from BABYMUSIC.utils.inline import supp_markup
 from config import BANNED_USERS
 
 
@@ -17,7 +17,7 @@ from config import BANNED_USERS
 async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_video(
-        video="https://graph.org/file/5690109178f081adf464d.mp4",
+        video="https://telegra.ph/file/edf3108172d5fcab8aa74.mp4",
         caption=_["ping_1"].format(app.mention),
     )
     pytgping = await PURVI.ping()
