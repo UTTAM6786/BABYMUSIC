@@ -1,8 +1,8 @@
 from pyrogram import  filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from PURVIMUSIC.utils.purvi_font import Fonts
-from PURVIMUSIC import app
+from BABYMUSIC.utils.purvi_font import Fonts
+from BABYMUSIC import app
 
 @app.on_message(filters.command(["font", "fonts"]))
 async def style_buttons(c, m, cb=False):
