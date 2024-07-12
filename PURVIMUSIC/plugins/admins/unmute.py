@@ -1,7 +1,7 @@
-from PURVIMUSIC import app
+from BABYMUSIC import app
 from pyrogram import filters,enums
 from pyrogram.types import ChatPermissions 
-from PURVIMUSIC.utils.purvi_ban import admin_filter
+from BABYMUSIC.utils.purvi_ban import admin_filter
 
 @app.on_message(filters.command("unmuteall") & admin_filter)
 async def unmute_all(_,msg):
