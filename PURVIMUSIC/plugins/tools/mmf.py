@@ -3,7 +3,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import filters
 from pyrogram.types import Message
-from PURVIMUSIC import app
+from BABYMUSIC import app
 
 @app.on_message(filters.command("mmf"))
 async def mmf(_, message: Message):
@@ -11,7 +11,7 @@ async def mmf(_, message: Message):
     reply_message = message.reply_to_message
 
     if len(message.text.split()) < 2:
-        await message.reply_text("**Give me text after /mmf to memify.**")
+        await message.reply_text("**Give me text after /mmf to memify by uttam**")
         return
 
     msg = await message.reply_text("**Memifying this image! ✊🏻**")
@@ -36,7 +36,7 @@ async def drawText(image_path, text):
     if os.name == "nt":
         fnt = "arial.ttf"
     else:
-        fnt = "./PURVIMUSIC/assets/default.ttf"
+        fnt = "./BABYMUSIC/assets/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 
