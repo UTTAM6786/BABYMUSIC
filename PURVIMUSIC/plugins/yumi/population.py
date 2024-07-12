@@ -10,7 +10,7 @@ def country_command_handler(client: Client, message: Message):
     country_code = message.text.split(maxsplit=1)[1].strip()
 
     # Call the external API for country information
-    api_url = f"https://restcountries.com/v3.1/alpha/{country_code}"
+    api_url = f"https://restcountries.com/v3.1/uttam/{country_code}"
     
     try:
         response = requests.get(api_url)
