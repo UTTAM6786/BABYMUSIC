@@ -1,14 +1,14 @@
 import random
 from pyrogram import filters
-from PURVIMUSIC import app
-from PURVIMUSIC import *
+from BABYMUSIC import app
+from BABYMUSIC import *
 from ... import *
 import config
 
 from ...logging import LOGGER
 
-from PURVIMUSIC import app, userbot
-from PURVIMUSIC.core.userbot import *
+from BABYMUSIC import app, userbot
+from BABYMUSIC.core.userbot import *
 
 import asyncio
 
