@@ -9,9 +9,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from PURVIMUSIC import YouTube, app
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils.database import (
+from BABYMUSIC import YouTube, app
+from BABYMUSIC.misc import SUDOERS
+from BABYMUSIC.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -37,7 +37,7 @@ def PlayWrapper(command):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="PURVImousAdmin",
+                            callback_data="BABYmousAdmin",
                         ),
                     ]
                 ]
