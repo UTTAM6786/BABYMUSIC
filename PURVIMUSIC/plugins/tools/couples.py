@@ -8,14 +8,14 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.enums import *
 
 #BOT FILE NAME
-from PURVIMUSIC import app as app
-from PURVIMUSIC.mongo.couples_db import _get_image, get_couple
+from BABYMUSIC import app as app
+from BABYMUSIC.mongo.couples_db import _get_image, get_couple
 
 POLICE = [
     [
         InlineKeyboardButton(
-            text="|| ˹𖤍 𝗔𝗟𝗣𝗛𝗔 𖤍˼ ||",
-            url=f"https://t.me/PURVI_UPDATES",
+            text="|| ˹𖤍 𝗨𝗧𝗧𝗔𝗠 𖤍˼ ||",
+            url=f"https://t.me/UBoT_HeLP",
         ),
     ],
 ]
@@ -81,7 +81,7 @@ async def ctest(_, message):
          img1 = Image.open(f"{p1}")
          img2 = Image.open(f"{p2}")
 
-         img = Image.open("PURVIMUSIC/assets/cppic.png")
+         img = Image.open("BABYMUSIC/assets/cppic.png")
 
          img1 = img1.resize((437,437))
          img2 = img2.resize((437,437))
