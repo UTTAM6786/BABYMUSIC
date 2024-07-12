@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from PURVIMUSIC.utils.decorators.language import language
+from BABYMUSIC import app
+from BABYMUSIC.misc import SUDOERS
+from BABYMUSIC.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from BABYMUSIC.utils.decorators.language import language
 from config import BANNED_USERS
 
 
