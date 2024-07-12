@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from PURVIMUSIC.core.mongo import mongodb
+from BABYMUSIC.core.mongo import mongodb
 
 from .logging import LOGGER
 
