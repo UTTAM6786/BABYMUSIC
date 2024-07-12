@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pydub import AudioSegment
 import speech_recognition as sr
-from PURVIMUSIC import app
+from BABYMUSIC import app
 # --------------------------------------
 
 def convert_video_to_text(video_path):
