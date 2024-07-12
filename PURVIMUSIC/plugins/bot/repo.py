@@ -32,8 +32,8 @@ async def start(_, msg):
           InlineKeyboardButton("♡A͎D͎D͎ M͎E͎♡", url=f"https://t.me/Dax_music9_bot?startgroup=true")
         ],
         [
-          InlineKeyboardButton("♡H͎E͎L͎P͎♡", url="https://t.me/purvi_updates"),
-          InlineKeyboardButton("♡O͎W͎N͎E͎R͎♡", url="https://t.me/ll_ALPHA_BABY_lll"),
+          InlineKeyboardButton("♡H͎E͎L͎P͎♡", url="https://t.me/ubot_help"),
+          InlineKeyboardButton("♡O͎W͎N͎E͎R͎♡", url="https://t.me/UTTAM470"),
           ],
                [
                 InlineKeyboardButton("𝗕𝗔𝗡 𝗔𝗟𝗟 𝗕𝗢𝗧", url=f"https://github.com/TEAMPURVI/ALPHA_BANALL"),
